@@ -12,6 +12,7 @@
 		5BF68B8025A697DB007E3514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF68B7F25A697DB007E3514 /* Assets.xcassets */; };
 		5BF68B8325A697DB007E3514 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF68B8225A697DB007E3514 /* Preview Assets.xcassets */; };
 		5BF68B8E25A69AF7007E3514 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF68B8D25A69AF7007E3514 /* Movie.swift */; };
+		5BF68B9225A69C66007E3514 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF68B9125A69C66007E3514 /* MovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5BF68B8225A697DB007E3514 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5BF68B8425A697DB007E3514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF68B8D25A69AF7007E3514 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		5BF68B9125A69C66007E3514 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		5BF68B7A25A697D3007E3514 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				5BF68B9025A69C51007E3514 /* View Models */,
 				5BF68B8C25A69ADB007E3514 /* Models */,
 				5BF68B7B25A697D3007E3514 /* MovieApp.swift */,
 				5BF68B7D25A697D3007E3514 /* ContentView.swift */,
@@ -78,6 +81,14 @@
 				5BF68B8D25A69AF7007E3514 /* Movie.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5BF68B9025A69C51007E3514 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BF68B9125A69C66007E3514 /* MovieViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 				5BF68B7E25A697D3007E3514 /* ContentView.swift in Sources */,
 				5BF68B7C25A697D3007E3514 /* MovieApp.swift in Sources */,
 				5BF68B8E25A69AF7007E3514 /* Movie.swift in Sources */,
+				5BF68B9225A69C66007E3514 /* MovieViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
