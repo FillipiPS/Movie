@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct MovieListView: View {
+    //MARK: - Instantiate Properties
+    
     @ObservedObject var movieListViewModel = MovieListViewModel()
 
+    //MARK: - Body View
+    
     var body: some View {
         List {
             ForEach(movieListViewModel.movies, id: \.movieId) { movie in
-                URLImage(url: movie.poster)
-                    .frame(width: 150, height: 200, alignment: .center)
+                PosterView(path: movie.poster)
             }
         }.onAppear {
             movieListViewModel.topRated()
         }
     }
 }
+
+//MARK: - Preview
 
 struct MovieListView_Previews: PreviewProvider {
     static var previews: some View {
