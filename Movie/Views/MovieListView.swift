@@ -15,7 +15,7 @@ struct MovieListView: View {
     //MARK: - Body View
 
     var body: some View {
-        List {
+        ScrollView {
             ForEach(movieListViewModel.movies, id: \.movieId) { movie in
                 CellView(movie: movie)
             }

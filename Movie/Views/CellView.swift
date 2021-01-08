@@ -37,7 +37,7 @@ struct CellView: View {
         .background(Color(UIColor(red: 0.91, green: 0.92, blue: 0.90, alpha: 1.00)))
         .frame(height: 170)
         .cornerRadius(12)
-        .padding()
+        .padding(EdgeInsets(top: 1.25, leading: 5, bottom: 1.25, trailing: 5))
     }
 }
 
