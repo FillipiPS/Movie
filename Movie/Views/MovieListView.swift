@@ -13,11 +13,11 @@ struct MovieListView: View {
     @ObservedObject var movieListViewModel = MovieListViewModel()
 
     //MARK: - Body View
-    
+
     var body: some View {
         List {
             ForEach(movieListViewModel.movies, id: \.movieId) { movie in
-                PosterView(path: movie.poster)
+                CellView(movie: movie)
             }
         }.onAppear {
             movieListViewModel.topRated()

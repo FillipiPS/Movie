@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B42046125A7E08800E694B3 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42046025A7E08800E694B3 /* MovieListView.swift */; };
 		5B42046525A7E56300E694B3 /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42046425A7E56200E694B3 /* PosterView.swift */; };
+		5B42046825A7ECB100E694B3 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42046725A7ECB100E694B3 /* CellView.swift */; };
 		5B81274425A69E7000E7782D /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B81274325A69E6E00E7782D /* Secrets.plist */; };
 		5B81274725A69E9600E7782D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81274625A69E9600E7782D /* Constants.swift */; };
 		5B81274B25A69F0A00E7782D /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81274A25A69F0A00E7782D /* URL+Extensions.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		5B42046025A7E08800E694B3 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		5B42046425A7E56200E694B3 /* PosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterView.swift; sourceTree = "<group>"; };
+		5B42046725A7ECB100E694B3 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		5B81274325A69E6E00E7782D /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		5B81274625A69E9600E7782D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5B81274A25A69F0A00E7782D /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				5B42046025A7E08800E694B3 /* MovieListView.swift */,
 				5B42046425A7E56200E694B3 /* PosterView.swift */,
+				5B42046725A7ECB100E694B3 /* CellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				5B81275625A6A17300E7782D /* MovieListViewModel.swift in Sources */,
 				5B81274F25A69F9C00E7782D /* HTTPClient.swift in Sources */,
 				5BF68B7C25A697D3007E3514 /* MovieApp.swift in Sources */,
+				5B42046825A7ECB100E694B3 /* CellView.swift in Sources */,
 				5BF68B8E25A69AF7007E3514 /* Movie.swift in Sources */,
 				5BF68B9225A69C66007E3514 /* MovieViewModel.swift in Sources */,
 				5B42046525A7E56300E694B3 /* PosterView.swift in Sources */,
