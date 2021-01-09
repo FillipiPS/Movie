@@ -21,17 +21,19 @@ struct CellView: View {
             VStack(alignment: .leading) {
                 Text(movie.title)
                     .fontWeight(.black)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .lineLimit(2)
                 Text(movie.overview)
-                    .frame(height: 80)
+                    .lineLimit(3)
+                    .frame(height: 70)
                 Spacer()
                 HStack {
                     Text("Média: \(movie.vote)")
                     Spacer()
                     Text(movie.year)
-                }
-                Spacer()
+                }.padding(.bottom, 10)
             }
-            .padding(.top)
+            .padding(.top, 10)
             .padding(.trailing)
         }
         .background(Color(UIColor(red: 0.91, green: 0.92, blue: 0.90, alpha: 1.00)))
