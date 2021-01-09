@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DetailResponse: Decodable {
+struct Detail: Decodable {
     let backdrop: String
     let title: String
     let overview: String
