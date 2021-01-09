@@ -24,6 +24,7 @@
 		5BF68B8E25A69AF7007E3514 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF68B8D25A69AF7007E3514 /* Movie.swift */; };
 		5BF68B9225A69C66007E3514 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF68B9125A69C66007E3514 /* MovieViewModel.swift */; };
 		5BF8239225AA474100BC2AEC /* MovieListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8239125AA474100BC2AEC /* MovieListScreen.swift */; };
+		5BF8239525AA606200BC2AEC /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8239425AA606200BC2AEC /* Detail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		5BF68B8D25A69AF7007E3514 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		5BF68B9125A69C66007E3514 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		5BF8239125AA474100BC2AEC /* MovieListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListScreen.swift; sourceTree = "<group>"; };
+		5BF8239425AA606200BC2AEC /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				5BF68B8D25A69AF7007E3514 /* Movie.swift */,
+				5BF8239425AA606200BC2AEC /* Detail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				5B81274F25A69F9C00E7782D /* HTTPClient.swift in Sources */,
 				5BF68B7C25A697D3007E3514 /* MovieApp.swift in Sources */,
 				5B42046825A7ECB100E694B3 /* CellView.swift in Sources */,
+				5BF8239525AA606200BC2AEC /* Detail.swift in Sources */,
 				5BF68B8E25A69AF7007E3514 /* Movie.swift in Sources */,
 				5BF68B9225A69C66007E3514 /* MovieViewModel.swift in Sources */,
 				5B42046525A7E56300E694B3 /* PosterView.swift in Sources */,
