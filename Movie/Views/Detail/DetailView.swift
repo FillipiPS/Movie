@@ -22,9 +22,10 @@ struct DetailView: View {
                        year: detailViewModel.year,
                        durationTime: detailViewModel.durationTime,
                        vote: detailViewModel.vote)
-                .onAppear {
-                    detailViewModel.getMovieDetails(with: "1858")
-                }
+            Divider()
+            ScrollableTextView(text: detailViewModel.overview)
+        }.onAppear {
+            detailViewModel.getMovieDetails(with: "1858")
         }
     }
 }
