@@ -26,3 +26,19 @@ struct Detail: Decodable {
         case vote = "vote_average"
     }
 }
+
+struct ImagesResponse: Decodable {
+    let images: [Backdrop]
+
+    private enum CodingKeys: String, CodingKey {
+        case images = "backdrops"
+    }
+}
+
+struct Backdrop: Decodable {
+    let image: String
+
+    private enum CodingKeys: String, CodingKey {
+        case image = "file_path"
+    }
+}
