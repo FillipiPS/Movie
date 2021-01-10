@@ -28,6 +28,8 @@ struct MovieListScreen: View {
     }
 }
 
+//MARK: - Preview
+
 struct MovieListScreen_Previews: PreviewProvider {
     static var previews: some View {
         MovieListScreen()

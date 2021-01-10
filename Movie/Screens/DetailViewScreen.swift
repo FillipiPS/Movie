@@ -25,6 +25,8 @@ struct DetailViewScreen: View {
     }
 }
 
+//MARK: - Preview
+
 struct DetailViewScreen_Previews: PreviewProvider {
     static var previews: some View {
         DetailViewScreen(movieId: "1858")
