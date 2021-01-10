@@ -18,7 +18,7 @@ struct Detail: Decodable {
 
     private enum CodingKeys: String, CodingKey {
         case backdrop = "backdrop_path"
-        case title = "original_title"
+        case title = "title"
         case overview = "overview"
         case poster = "poster_path"
         case year = "release_date"
