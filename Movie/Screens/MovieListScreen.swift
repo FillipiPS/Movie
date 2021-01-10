@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MovieListScreen: View {
     //MARK: - Instantiate Properties
-    
+
     @ObservedObject var movieListViewModel: MovieListViewModel
 
     //MARK: - Initialisation
