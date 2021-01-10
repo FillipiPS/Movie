@@ -27,7 +27,7 @@ struct Detail: Decodable {
     }
 }
 
-struct ImagesResponse: Decodable {
+struct ImageResponse: Decodable {
     let images: [Backdrop]
 
     private enum CodingKeys: String, CodingKey {
