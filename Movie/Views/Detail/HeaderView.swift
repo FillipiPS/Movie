@@ -22,10 +22,10 @@ struct HeaderView: View {
     var body: some View {
         ZStack {
             URLImage(url: backdrop)
-                .frame(height: 220)
+                .frame(height: 270)
             Rectangle()
                 .fill(Color.black.opacity(0.5))
-                .frame(height: 220)
+                .frame(height: 270)
             HStack(alignment: .top, spacing: 10) {
                 PosterView(path: poster)
                     .padding(.leading)
