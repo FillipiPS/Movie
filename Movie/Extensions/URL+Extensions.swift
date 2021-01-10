@@ -20,6 +20,10 @@ extension URL {
         return URL(string: "https://api.themoviedb.org/3/movie/\(id)/images?&api_key=\(Constants.apiKey)")
     }
 
+    static func getMovieCast(with id: String) -> URL? {
+        return URL(string: "https://api.themoviedb.org/3/movie/\(id)/credits?api_key=\(Constants.apiKey)&language=pt-BR")
+    }
+
     static func getImage(with path: String) -> URL? {
         return URL(string: "https://image.tmdb.org/t/p/w500\(path)")
     }

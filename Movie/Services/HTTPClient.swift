@@ -51,20 +51,38 @@ class HTTPClient {
     }
 
     func getMovieBackdrops(with id: String, completion: @escaping (Result<[Backdrop]?, NetworkError>) -> Void) {
-            guard let url = URL.getMovieBackdrops(with: id) else {
-                return completion(.failure(.badURL))
+        guard let url = URL.getMovieBackdrops(with: id) else {
+            return completion(.failure(.badURL))
+        }
+
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data, error == nil else {
+                return completion(.failure(.noData))
             }
 
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
-                guard let data = data, error == nil else {
-                    return completion(.failure(.noData))
-                }
+            guard let movieImages = try? JSONDecoder().decode(ImageResponse.self, from: data) else {
+                return completion(.failure(.decodingError))
+            }
 
-                guard let movieImages = try? JSONDecoder().decode(ImageResponse.self, from: data) else {
-                    return completion(.failure(.decodingError))
-                }
+            completion(.success(movieImages.images))
+        }.resume()
+    }
 
-                completion(.success(movieImages.images))
-            }.resume()
+    func getMovieCast(with id: String, completion: @escaping (Result<[Character]?, NetworkError>) -> Void) {
+        guard let url = URL.getMovieCast(with: id) else {
+            return completion(.failure(.badURL))
         }
+
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data, error == nil else {
+                return completion(.failure(.noData))
+            }
+
+            guard let cast = try? JSONDecoder().decode(CastResponse.self, from: data) else {
+                return completion(.failure(.decodingError))
+            }
+
+            completion(.success(cast.cast))
+        }.resume()
+    }
 }
