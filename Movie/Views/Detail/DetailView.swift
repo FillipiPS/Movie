@@ -25,20 +25,22 @@ struct DetailView: View {
     //MARK: - Body View
 
     var body: some View {
-        VStack {
-            HeaderView(backdrop: detailViewModel.backdrop,
-                       poster: detailViewModel.poster,
-                       title: detailViewModel.title,
-                       year: detailViewModel.year,
-                       durationTime: detailViewModel.durationTime,
-                       vote: detailViewModel.vote)
-            ScrollableTextView(text: detailViewModel.overview)
-            if backdropViewModel.backdrops.count > 0 {
-                CollectionView(images: backdropViewModel.backdrops.map { $0.image })
+        ScrollView {
+            VStack {
+                HeaderView(backdrop: detailViewModel.backdrop,
+                           poster: detailViewModel.poster,
+                           title: detailViewModel.title,
+                           year: detailViewModel.year,
+                           durationTime: detailViewModel.durationTime,
+                           vote: detailViewModel.vote)
+                ScrollableTextView(text: detailViewModel.overview)
+                if backdropViewModel.backdrops.count > 0 {
+                    CollectionView(images: backdropViewModel.backdrops.map { $0.image })
+                }
+            }.onAppear {
+                detailViewModel.getMovieDetails(with: movieId)
+                backdropViewModel.getMovieBackdrops(with: movieId)
             }
-        }.onAppear {
-            detailViewModel.getMovieDetails(with: movieId)
-            backdropViewModel.getMovieBackdrops(with: movieId)
         }
     }
 }
