@@ -34,6 +34,7 @@
 		5BF823C325AA93DA00BC2AEC /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF823C225AA93DA00BC2AEC /* PageView.swift */; };
 		5BF823C625AA940F00BC2AEC /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF823C525AA940F00BC2AEC /* PageControl.swift */; };
 		5BF823CB25AA967500BC2AEC /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF823CA25AA967500BC2AEC /* CollectionView.swift */; };
+		5BF823CE25AA9B2A00BC2AEC /* DetailViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF823CD25AA9B2A00BC2AEC /* DetailViewScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		5BF823C225AA93DA00BC2AEC /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		5BF823C525AA940F00BC2AEC /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		5BF823CA25AA967500BC2AEC /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		5BF823CD25AA9B2A00BC2AEC /* DetailViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				5BF8239125AA474100BC2AEC /* MovieListScreen.swift */,
+				5BF823CD25AA9B2A00BC2AEC /* DetailViewScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -242,10 +245,10 @@
 		5BF823BD25AA935E00BC2AEC /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				5BF823CA25AA967500BC2AEC /* CollectionView.swift */,
 				5BF823C225AA93DA00BC2AEC /* PageView.swift */,
 				5BF823BE25AA939800BC2AEC /* PageViewController.swift */,
 				5BF823C525AA940F00BC2AEC /* PageControl.swift */,
-				5BF823CA25AA967500BC2AEC /* CollectionView.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				5BF823BF25AA939800BC2AEC /* PageViewController.swift in Sources */,
 				5BF8239525AA606200BC2AEC /* Detail.swift in Sources */,
 				5BF68B8E25A69AF7007E3514 /* Movie.swift in Sources */,
+				5BF823CE25AA9B2A00BC2AEC /* DetailViewScreen.swift in Sources */,
 				5BF68B9225A69C66007E3514 /* MovieViewModel.swift in Sources */,
 				5BF823C325AA93DA00BC2AEC /* PageView.swift in Sources */,
 				5B42046525A7E56300E694B3 /* PosterView.swift in Sources */,

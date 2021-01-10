@@ -10,8 +10,17 @@ import SwiftUI
 struct DetailView: View {
     //MARK: - Instantiate Properties
 
-    @ObservedObject var detailViewModel = DetailViewModel()
-    @ObservedObject var backdropViewModel = BackdropViewModel()
+    @ObservedObject var detailViewModel: DetailViewModel
+    @ObservedObject var backdropViewModel: BackdropViewModel
+    let movieId: String
+
+    //MARK: - Initialisation
+
+    init(Id: String) {
+        movieId = Id
+        detailViewModel = DetailViewModel()
+        backdropViewModel = BackdropViewModel()
+    }
 
     //MARK: - Body View
 
@@ -28,8 +37,8 @@ struct DetailView: View {
                 CollectionView(images: backdropViewModel.backdrops.map { $0.image })
             }
         }.onAppear {
-            detailViewModel.getMovieDetails(with: "1858")
-            backdropViewModel.getMovieBackdrops(with: "1858")
+            detailViewModel.getMovieDetails(with: movieId)
+            backdropViewModel.getMovieBackdrops(with: movieId)
         }
     }
 }
@@ -38,6 +47,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(Id: "1858")
     }
 }
