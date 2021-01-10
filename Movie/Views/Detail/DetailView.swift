@@ -11,6 +11,7 @@ struct DetailView: View {
     //MARK: - Instantiate Properties
 
     @ObservedObject var detailViewModel = DetailViewModel()
+    @ObservedObject var backdropViewModel = BackdropViewModel()
 
     //MARK: - Body View
 
@@ -22,10 +23,13 @@ struct DetailView: View {
                        year: detailViewModel.year,
                        durationTime: detailViewModel.durationTime,
                        vote: detailViewModel.vote)
-            Divider()
             ScrollableTextView(text: detailViewModel.overview)
+            if backdropViewModel.backdrops.count > 0 {
+                CollectionView(images: backdropViewModel.backdrops.map { $0.image })
+            }
         }.onAppear {
             detailViewModel.getMovieDetails(with: "1858")
+            backdropViewModel.getMovieBackdrops(with: "1858")
         }
     }
 }

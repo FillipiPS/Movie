@@ -33,6 +33,7 @@
 		5BF823BF25AA939800BC2AEC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF823BE25AA939800BC2AEC /* PageViewController.swift */; };
 		5BF823C325AA93DA00BC2AEC /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF823C225AA93DA00BC2AEC /* PageView.swift */; };
 		5BF823C625AA940F00BC2AEC /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF823C525AA940F00BC2AEC /* PageControl.swift */; };
+		5BF823CB25AA967500BC2AEC /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF823CA25AA967500BC2AEC /* CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		5BF823BE25AA939800BC2AEC /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		5BF823C225AA93DA00BC2AEC /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		5BF823C525AA940F00BC2AEC /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		5BF823CA25AA967500BC2AEC /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +82,10 @@
 		5B42045F25A7DFAF00E694B3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5BF823BD25AA935E00BC2AEC /* Collection */,
 				5BF823B025AA859200BC2AEC /* MovieList */,
 				5BF823AE25AA856D00BC2AEC /* Detail */,
 				5BF823B125AA85AB00BC2AEC /* Utils */,
+				5BF823BD25AA935E00BC2AEC /* Collection */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -243,6 +245,7 @@
 				5BF823C225AA93DA00BC2AEC /* PageView.swift */,
 				5BF823BE25AA939800BC2AEC /* PageViewController.swift */,
 				5BF823C525AA940F00BC2AEC /* PageControl.swift */,
+				5BF823CA25AA967500BC2AEC /* CollectionView.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				5B42046125A7E08800E694B3 /* MovieListView.swift in Sources */,
 				5B81275A25A6A22F00E7782D /* URLImage.swift in Sources */,
 				5B81275D25A6A27300E7782D /* ImageLoader.swift in Sources */,
+				5BF823CB25AA967500BC2AEC /* CollectionView.swift in Sources */,
 				5BF823BA25AA8A4A00BC2AEC /* BackdropViewModel.swift in Sources */,
 				5BF823AA25AA809C00BC2AEC /* HeaderView.swift in Sources */,
 				5B81274B25A69F0A00E7782D /* URL+Extensions.swift in Sources */,

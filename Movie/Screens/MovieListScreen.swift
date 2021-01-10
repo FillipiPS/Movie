@@ -11,13 +11,11 @@ struct MovieListScreen: View {
     //MARK: - Instantiate Properties
 
     @ObservedObject var movieListViewModel: MovieListViewModel
-    @ObservedObject var backdropViewModel: BackdropViewModel
 
     //MARK: - Initialisation
 
     init() {
         movieListViewModel = MovieListViewModel()
-        backdropViewModel = BackdropViewModel()
     }
 
     //MARK: - Body View
@@ -26,7 +24,6 @@ struct MovieListScreen: View {
         MovieListView(movies: movieListViewModel.movies)
             .onAppear {
                 movieListViewModel.topRated()
-                backdropViewModel.getMovieBackdrops(with: "1858")
             }
     }
 }
