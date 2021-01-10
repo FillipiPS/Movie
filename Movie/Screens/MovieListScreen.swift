@@ -21,10 +21,12 @@ struct MovieListScreen: View {
     //MARK: - Body View
     
     var body: some View {
-        MovieListView(movies: movieListViewModel.movies)
-            .onAppear {
-                movieListViewModel.topRated()
-            }
+        NavigationView {
+            MovieListView(movies: movieListViewModel.movies)
+                .navigationBarTitle("Top Rated Movies", displayMode: .large)
+        }.onAppear {
+            movieListViewModel.topRated()
+        }
     }
 }
 
