@@ -26,7 +26,7 @@ struct HeaderView: View {
             Rectangle()
                 .fill(Color.black.opacity(0.5))
                 .frame(height: 220)
-            HStack(spacing: 10) {
+            HStack(alignment: .top, spacing: 10) {
                 PosterView(path: poster)
                     .padding(.leading)
                 VStack(alignment: .leading) {
@@ -36,6 +36,7 @@ struct HeaderView: View {
                     Text(durationTime)
                     Text("Média: \(vote)")
                 }.foregroundColor(.white)
+                .padding(.top, 10)
                 Spacer()
             }.padding(.top, 100)
         }

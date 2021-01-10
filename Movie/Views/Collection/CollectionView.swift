@@ -13,6 +13,7 @@ struct CollectionView: View {
 
     var body: some View {
         PageView(pages: images.map { URLImage(url: $0) })
+            .frame(height: 250)
     }
 }
 

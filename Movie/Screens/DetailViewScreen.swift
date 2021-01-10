@@ -22,6 +22,7 @@ struct DetailViewScreen: View {
 
     var body: some View {
         DetailView(Id: movieId)
+            .navigationBarTitle("", displayMode: .inline)
     }
 }
 
