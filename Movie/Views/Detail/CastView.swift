@@ -11,7 +11,7 @@ struct CastView: View {
     //MARK: - Instantiate Properties
 
     let characters: [CharacterViewModel]
-    
+
     //MARK: - Body View
 
     var body: some View {

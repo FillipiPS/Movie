@@ -30,6 +30,7 @@ struct URLImage: View {
               let image = UIImage(data: data) else {
             return Image(placeholder).resizable()
         }
+
         return Image(uiImage: image).resizable()
     }
 }

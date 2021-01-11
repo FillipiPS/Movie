@@ -9,12 +9,12 @@ import SwiftUI
 
 struct PageView<Page: View>: View {
     //MARK: - Instatiate Properties
-    
+
     var pages: [Page]
     @State private var currentPage = 0
-    
+
     //MARK: - Body View
-    
+
     var body: some View {
         VStack {
             PageViewController(pages: pages, currentPage: $currentPage)

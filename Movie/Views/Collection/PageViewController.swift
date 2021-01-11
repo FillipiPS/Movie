@@ -10,16 +10,16 @@ import UIKit
 
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     //MARK: - Instatiate Properties
-    
+
     var pages: [Page]
     @Binding var currentPage: Int
-    
+
     //MARK: - Functions
-    
+
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
-    
+
     func makeUIViewController(context: Context) -> UIPageViewController {
         let pageViewController = UIPageViewController(
             transitionStyle: .scroll,
@@ -29,29 +29,29 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
         
         return pageViewController
     }
-    
+
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
             [context.coordinator.controllers[currentPage]], direction: .forward, animated: true)
     }
-    
+
     //MARK: - Coordinator
-    
+
     class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
         //MARK: - Instatiate Properties
-        
+
         var parent: PageViewController
         var controllers = [UIViewController]()
-        
+
         //MARK: - initialization
-        
+
         init(_ pageViewController: PageViewController) {
             parent = pageViewController
             controllers = parent.pages.map { UIHostingController(rootView: $0) }
         }
-        
+
         //MARK: - Functions
-        
+
         func pageViewController(
             _ pageViewController: UIPageViewController,
             viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -63,7 +63,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             }
             return controllers[index - 1]
         }
-        
+
         func pageViewController(
             _ pageViewController: UIPageViewController,
             viewControllerAfter viewController: UIViewController) -> UIViewController? {
@@ -75,7 +75,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             }
             return controllers[index + 1]
         }
-        
+
         func pageViewController(
             _ pageViewController: UIPageViewController,
             didFinishAnimating finished: Bool,

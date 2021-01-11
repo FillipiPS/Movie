@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CellView: View {
     //MARK: - Instantiate Properties
-    
+
     let movie: MovieViewModel
 
     //MARK: - Body View
