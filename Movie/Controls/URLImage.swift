@@ -11,13 +11,13 @@ struct URLImage: View {
 
     //MARK: - Instatiate Properties
 
-    let url: String
+    let url: String?
     let placeholder: String
     @ObservedObject var imageLoader = ImageLoader()
 
     //MARK: - Initialisation
 
-    init(url: String, placeholder: String = "placeholder") {
+    init(url: String?, placeholder: String = "placeholder") {
         self.url = url
         self.placeholder = placeholder
         self.imageLoader.downloadImage(url: self.url)

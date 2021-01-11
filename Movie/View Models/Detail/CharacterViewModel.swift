@@ -9,6 +9,9 @@ import Foundation
 
 struct CharacterViewModel {
     let character: Character
+    var id: Int {
+        character.id
+    }
     var name: String {
         character.name
     }

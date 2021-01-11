@@ -12,11 +12,13 @@ struct CastResponse: Decodable {
 }
 
 struct Character: Decodable {
+    let id: Int
     let name: String
     let characterName: String
     let image: String?
     
     private enum CodingKeys: String, CodingKey {
+        case id = "id"
         case name = "name"
         case characterName = "character"
         case image = "profile_path"

@@ -12,6 +12,7 @@ struct DetailView: View {
 
     @ObservedObject var detailViewModel: DetailViewModel
     @ObservedObject var backdropViewModel: BackdropViewModel
+    @ObservedObject var castViewModel: CastViewModel
     let movieId: String
 
     //MARK: - Initialisation
@@ -20,6 +21,7 @@ struct DetailView: View {
         movieId = Id
         detailViewModel = DetailViewModel()
         backdropViewModel = BackdropViewModel()
+        castViewModel = CastViewModel()
     }
 
     //MARK: - Body View
@@ -39,9 +41,12 @@ struct DetailView: View {
                 if backdropViewModel.backdrops.count > 0 {
                     CollectionView(images: backdropViewModel.backdrops.map { $0.image })
                 }
+                CastView(characters: castViewModel.characters)
+                    .padding(.leading, 2)
             }.onAppear {
                 detailViewModel.getMovieDetails(with: movieId)
                 backdropViewModel.getMovieBackdrops(with: movieId)
+                castViewModel.getMovieCast(with: movieId)
             }
         }
     }

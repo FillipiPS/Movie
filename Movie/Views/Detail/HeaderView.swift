@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HeaderView: View {
     //MARK: - Instantiate Properties
-    
+
     let backdrop: String
     let poster: String
     let title: String
