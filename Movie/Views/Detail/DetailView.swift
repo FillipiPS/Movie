@@ -41,8 +41,10 @@ struct DetailView: View {
                 if backdropViewModel.backdrops.count > 0 {
                     CollectionView(images: backdropViewModel.backdrops.map { $0.image })
                 }
-                CastView(characters: castViewModel.characters)
-                    .padding(.leading, 2)
+                if castViewModel.characters.count > 0 {
+                    CastView(characters: castViewModel.characters)
+                        .padding(.leading, 2)
+                }
             }.onAppear {
                 detailViewModel.getMovieDetails(with: movieId)
                 backdropViewModel.getMovieBackdrops(with: movieId)

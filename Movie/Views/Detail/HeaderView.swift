@@ -31,12 +31,15 @@ struct HeaderView: View {
                     .padding(.leading)
                 VStack(alignment: .leading) {
                     Text(title)
-                        .font(.title)
+                        .font(.title2)
+                        .bold()
+                        .fixedSize(horizontal: false, vertical: true)
+                        .lineLimit(3)
                     Text(year)
                     Text(durationTime)
                     Text(Constants.View.vote.insert(value: vote))
                 }.foregroundColor(.white)
-                .padding(.top, 10)
+                .padding(.top, 2)
                 Spacer()
             }.padding(.top, 100)
         }
