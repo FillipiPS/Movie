@@ -16,7 +16,7 @@ struct PageView<Page: View>: View {
     //MARK: - Body View
     
     var body: some View {
-        ZStack(alignment: .bottom) {
+        VStack {
             PageViewController(pages: pages, currentPage: $currentPage)
             PageControl(numberOfPages: pages.count, currentPage: $currentPage)
         }

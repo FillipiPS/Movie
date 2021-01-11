@@ -12,8 +12,11 @@ struct CollectionView: View {
     var images: [String]
 
     var body: some View {
-        PageView(pages: images.map { URLImage(url: $0) })
-            .frame(height: 250)
+        PageView(pages: images.map {
+            URLImage(url: $0)
+                .aspectRatio(contentMode: .fit)
+        })
+        .frame(height: 250)
     }
 }
 
