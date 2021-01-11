@@ -31,7 +31,7 @@ struct HeaderView: View {
                     .padding(.leading)
                 VStack(alignment: .leading) {
                     Text(title)
-                        .font(.title2)
+                        .font(title.count >= 27 ? .title3 : .title)
                         .bold()
                         .fixedSize(horizontal: false, vertical: true)
                         .lineLimit(3)
@@ -39,7 +39,7 @@ struct HeaderView: View {
                     Text(durationTime)
                     Text(Constants.View.vote.insert(value: vote))
                 }.foregroundColor(.white)
-                .padding(.top, 2)
+                .padding(.top, 10)
                 Spacer()
             }.padding(.top, 100)
         }
