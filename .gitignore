@@ -2,7 +2,7 @@
 ##Project-wide
 .DS_Store
 ._*
-Secrets.plist
+#Secrets.plist
 
 ##CoreML
 #*.mlmodel
