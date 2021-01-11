@@ -24,6 +24,7 @@ struct PageView<Page: View>: View {
 }
 
 //MARK: - Preview
+
 struct PageView_Previews: PreviewProvider {
     static var previews: some View {
         let images = ["/77P56ZcL8M9Cw7FIptMIGjhNJoj.jpg",

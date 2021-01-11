@@ -17,7 +17,7 @@ struct URLImage: View {
 
     //MARK: - Initialisation
 
-    init(url: String?, placeholder: String = "placeholder") {
+    init(url: String?, placeholder: String = Constants.Image.placeholder) {
         self.url = url
         self.placeholder = placeholder
         self.imageLoader.downloadImage(url: self.url)

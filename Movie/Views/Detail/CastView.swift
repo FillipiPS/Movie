@@ -16,7 +16,7 @@ struct CastView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 1) {
-            Text("Elenco")
+            Text(Constants.View.cast)
                 .font(.largeTitle)
                 .padding(.leading, 10)
             ScrollView(.horizontal, showsIndicators: false) {

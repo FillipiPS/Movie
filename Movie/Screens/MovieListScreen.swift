@@ -23,7 +23,7 @@ struct MovieListScreen: View {
     var body: some View {
         NavigationView {
             MovieListView(movies: movieListViewModel.movies)
-                .navigationBarTitle("Top Rated Movies", displayMode: .large)
+                .navigationBarTitle(Constants.NavigationBar.topRatedMoviesTitle, displayMode: .large)
         }.onAppear {
             movieListViewModel.topRated()
         }

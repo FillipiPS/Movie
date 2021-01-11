@@ -28,7 +28,7 @@ struct CellView: View {
                     .frame(height: 70)
                 Spacer()
                 HStack {
-                    Text("Média: \(movie.vote)")
+                    Text(Constants.View.vote.insert(value: movie.vote))
                     Spacer()
                     Text(movie.year)
                 }.padding(.bottom, 10)

@@ -34,7 +34,7 @@ struct HeaderView: View {
                         .font(.title)
                     Text(year)
                     Text(durationTime)
-                    Text("Média: \(vote)")
+                    Text(Constants.View.vote.insert(value: vote))
                 }.foregroundColor(.white)
                 .padding(.top, 10)
                 Spacer()
